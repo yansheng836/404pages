@@ -1,0 +1,3 @@
+﻿#正确做法，把该语言（文件）标记为“不供应的代码”，linguist-vendored（语言供应）设置为false，即不是自己编写的的；
+#详见：https://github.com/github/linguist
+phaser.min.js linguist-vendored
