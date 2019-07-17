@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>backToPreviousPage.html</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="./css/pre.css">
+
+<style type="text/css">
+* {
+	font-size: 22px;
+}
+
+a,input,button {
+	display: block;
+}
+
+.description{
+	text-indent: 2em;
+}
+
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<article>
+			<h1>实现跳转到上一页的三类方法:</h1>
+			<h2>总述</h2>
+			<p class="description">主要是用于一些属性的设置和事件监听，如：</p>
+		</article>
+
+		<article>
+			<h2>方法1：a标签的超链接里写js</h2>
+			<p class="description">注意：一定要写 javascript:，因为这是内嵌式js代码；可以不写window这个顶级对象。</p>
+			<a href="javascript:window.history.go(-1);">返回上一页面 javascript:window.history.go(-1);</a>
+			<a href="javascript:history.go(-1);">返回上一页面 javascript:history.go(-1);</a>
+			<a href="javascript:history.back();">返回上一页面 javascript:history.back();</a>
+			<a href="javascript:history.back(-1);">返回上一页面 javascript:history.back(-1);</a>
+			<!-- location对象包含的是当前URL的信息，href属性用于：设置或返回完整的 URL，referrer 属性可返回载入当前文档的文档的 URL,即上一个页面的URL；
+	总结为:设置a标签的超链接为上一个页面的URL，由此，点击可实现跳转
+	 -->
+			<!-- <p>location对象包含的是当前URL的信息，href属性用于：设置或返回完整的 URL，referrer 属性可返回载入当前文档的文档的 URL,即上一个页面的URL；
+	总结为:设置a标签的超链接为上一个页面的URL，由此，点击可实现跳转</p> -->
+			<a href="javascript:location.href = document.referrer;">返回上一页面 javascript:location.href =
+				document.referrer;</a>
+		</article>
+
+		<article>
+			<h2>方法2：a标签设置onclick()事件</h2>
+			<p class="description">return
+				false禁止链接跳转到href的地址。建议用第一个，加上javascript:window.，go(-1)和back(-1)都可以，这里不一一列举。a标签设置onclick()事件,可以省略javascript:，因为这里面事件监听本来就是有js来完成的，
+				return false禁止链接跳转到href的地址</p>
+			<a href="" onclick="javascript:window.history.go(-1);return false;">javascript:window.history.go(-1);return
+				false;</a>
+
+			<a href="" onclick="window.history.go(-1);return false;">返回上一页面
+				javascript:history.go(-1);return false;</a>
+			<a href="" onclick="history.go(-1);return false;">history.go(-1);return false;</a>
+			<a href="12" onclick="history.go(-1);">history.go(-1);不加return false;无效</a>
+
+			<a href="javascript:;" onclick="history.go(-1);return false;">history.go(-1);return false;</a>
+			<a href="javascript:;" onclick="history.go(-1);">history.go(-1);不加return false;有效</a>
+			<a href="javascript:;" onclick="history.back(-1);">history.back(-1);不加return false;有效</a>
+			<a href="url" onclick="location.href = document.referrer; return false;">location.href =
+				document.referrer; return false;</a>
+
+			<a onclick="history.go(-1);">history.go(-1);不设置href，会不显示a标签特征：变色，下划线；但是可以实现跳转。</a>
+
+		</article>
+
+		<article>
+			<h2>方法3：input,button标签设置onclick()事件</h2>
+			<p class="description">可以省略window和 return false（因为这两个标签是没有超链接的，所以不存在禁用超链接）;</p>
+			<input type="button" value="javascript:history.back();" onclick="javascript:history.back();">
+			<input type="button" value="javascript:history.back(-1);" onclick="javascript:history.back(-1);">
+			<input type="button" value="history.back(-1);" onclick="history.back(-1);">
+			<input type="button" value="history.go(-1);" onclick="history.go(-1);">
+			<button onclick="history.back();">返回上一页面history.back();</button>
+			<button onclick="history.back(-1);">返回上一页面history.back(-1);</button>
+			<button onclick="history.go(-1);">返回上一页面history.go(-1);</button>
+		</article>
+
+	</div>
+
+</body>
+</html>
