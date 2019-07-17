@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>invalidHref.html</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="./css/pre.css">
+
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<h1>实现a标签href不跳转(禁止跳转),从原理上来讲，可分如下两种方法：</h1>
+		<div>
+			<h2>第一种：设置标签属性href</h2>
+			<p>使其指向空或不返回任何内容，注：void(0)为：undefined。如：
+			<pre>
+&lt;a href="javascript:void(0);">点此无反应javascript:void(0)&lt;/a>
+&lt;a href="javascript:;">点此无反应javascript:&lt;/a>
+</pre>
+			</p>
+		</div>
+
+		<div>
+			<h2>第二种：设置标签事件onclick</h2>
+			<p>设置为return false，不管href属性的url是什么都会无效，即阻止其默认（跳转）行为。如：
+			<pre>
+&lt;a href="" onclick="return false;">点此无反应return false;&lt;/a>
+</pre>
+			</p>
+		</div>
+		
+	</div>
+
+
+	<script type="text/javascript">
+		console.log(void (0));
+	</script>
+	
+	<a href="baidu.com" onclick="forbiddenA();">点此无反应return false;</a>
+	<!-- 这样return false; 为什么不行？ -->
+	<script type="text/javascript">
+	function forbiddenA(){
+		console.log("禁用超链接");
+		return false;
+	}
+	</script>
+</body>
+</html>

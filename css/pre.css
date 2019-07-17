@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+#container {
+	padding-left: 10px;
+}
+
+pre {
+	background-color: #e2e2e2;
+	font-family: Consolas serif;
+	/* font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif; */
+	color: blue;
+}
