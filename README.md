@@ -1,8 +1,8 @@
-![GitHub](https://img.shields.io/github/license/yansheng836/404pages.svg)![GitHub repo size](https://img.shields.io/github/repo-size/yansheng836/404pages.svg)![GitHub release](https://img.shields.io/github/release/yansheng836/404pages.svg)![GitHub last commit](https://img.shields.io/github/last-commit/yansheng836/404pages.svg)![GitHub language count](https://img.shields.io/github/languages/count/yansheng836/404pages.svg)![GitHub top language](https://img.shields.io/github/languages/top/yansheng836/404pages.svg)
+![GitHub](https://img.shields.io/github/license/yansheng836/404pages.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/yansheng836/404pages.svg) ![GitHub release](https://img.shields.io/github/release/yansheng836/404pages.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/yansheng836/404pages.svg) ![GitHub language count](https://img.shields.io/github/languages/count/yansheng836/404pages.svg) ![GitHub top language](https://img.shields.io/github/languages/top/yansheng836/404pages.svg)
 
 
 
-## 404pages
+# 404pages : HTTP Status 404 – Not Found
 
 ![404pages](https://s2.ax1x.com/2019/07/17/ZLQV0g.jpg)
 
@@ -21,7 +21,7 @@
 </error-page>
 ```
 
-3. 整理好后，会把每一个404页面独立开来，这样如果有需要，直接复制对应文件夹即可；当然你也可以进行修改，对其进行个性化设置。
+3. 整理好后（暂未整理好），会把每一个404页面独立开来，这样<font color="red">如果有需要，直接复制对应文件夹即可</font>；当然你也可以进行修改，对其进行个性化设置。
 
  
 
