@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+
+body {
+	background-image: url(/404pages/images/简约.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed; /*此条属性必须设置否则可能无效*/
+	/* 主要起作用是这个样式：让背景图基于容器大小伸缩 */
+	background-size: cover;
+}
+
+h1[id="title"] {
+	font-size: 60px;
+	font-weight: bolder;
+	color: #96c4df;
+	text-shadow: 10px 5px 5px #91ded0;
+	text-align: center;
+	/* padding-bottom: 10px;
+	padding-top: 20px; */
+}
+
+/* 分栏 */
+.left,.middle,.right {
+	display: inline-block;
+	border: solid 1px grey;
+	/* background: #e2e1eb; */
+}
+
+.left {
+	height: 500px;
+	width: 470px;
+	float: left;
+}
+
+.middle {
+	height: 500px;
+	width: 504px;
+	margin: 0 5px 0 5px;
+}
+
+.right {
+	height: 500px;
+	width: 470px;
+	float: right;
+	right: 0;
+}
+
+/* 列表的样式  */
+ol {
+	list-style-position: inside;
+}
+
+ol .ol-title {
+	font-size: 40px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+li {
+	font-size: 30px;
+}
+
+/* 列表的超链接部分的样式  */
+li a {
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #018c54;
+	text-decoration: none;
+	position: relative;
+	/*  display: block; */
+}
+
+li a:before,li a:after {
+	content: '';
+	border-bottom: solid 2px red;
+	position: absolute;
+	bottom: 0;
+	width: 0;
+}
+
+li a:before {
+	left: 0;
+}
+
+li a:after {
+	right: 0;
+}
+
+li a:hover:before,li a:hover:after {
+	width: 50%;
+}
+
+li a:before,li a:after {
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+/* 版权信息 */
+.footer {
+	margin-top: 3%;
+	text-align: center;
+	display: block;
+}
+
+.footer p {
+	font-size: 20px;
+	font-family: 'Muli', sans-serif;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+.footer a {
+	font-size: 20px;
+}
+
+.footer a,a:active {
+	text-decoration: none;
+	transition: all 0.5s ease-in-out;
+}
+
+.footer a:hover {
+	color: #c0392b;
+	transition: all 0.5s ease-in-out;
+}
