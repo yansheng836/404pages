@@ -17,7 +17,9 @@
 </error-page>
 ```
 
+3. 整理好后，会把每一个404页面独立开来，这样如果有需要，直接复制对应文件夹即可；当然你也可以进行修改，对其进行个性化设置。
 
+ 
 
 ### 404页面分类：
 
@@ -44,8 +46,8 @@
 
 ### 致谢：
 
-1. i7素材网：http://www.17sucai.com，部分404页面来自此网站。
-2. 吾爱破解社区：https://www.52pojie.cn，一开始想起自定义404页面就是受《圈小猫》游戏的影响，该项目中的此部分内容转载自：吾爱破解社区在github上的开源项目：<https://github.com/ganlvtech/phaser-catch-the-cat>，游戏试玩地址：<https://ganlvtech.github.io/phaser-catch-the-cat/>。
+1. [i7素材网](http://www.17sucai.com)：404页面来自此网站。
+2. [吾爱破解社区](https://www.52pojie.cn)：我当时想自定义404页面就是受《圈小猫》游戏的影响，我的项目中的此部分内容转载自：吾爱破解社区在github上的开源项目：[phaser-catch-the-cat](https://github.com/ganlvtech/phaser-catch-the-cat)，游戏试玩地址：[https://ganlvtech.github.io/phaser-catch-the-cat/](https://ganlvtech.github.io/phaser-catch-the-cat/)。
 
 
 
