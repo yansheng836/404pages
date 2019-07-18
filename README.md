@@ -1,3 +1,7 @@
+![GitHub](https://img.shields.io/github/license/yansheng836/404pages.svg)![GitHub repo size](https://img.shields.io/github/repo-size/yansheng836/404pages.svg)![GitHub release](https://img.shields.io/github/release/yansheng836/404pages.svg)![GitHub last commit](https://img.shields.io/github/last-commit/yansheng836/404pages.svg)![GitHub language count](https://img.shields.io/github/languages/count/yansheng836/404pages.svg)![GitHub top language](https://img.shields.io/github/languages/top/yansheng836/404pages.svg)
+
+
+
 ## 404pages
 
 ![404pages](https://s2.ax1x.com/2019/07/17/ZLQV0g.jpg)
@@ -32,8 +36,8 @@
    - 404页面4:哭脸404
    - 404页面5:蓝色，纯文字
 
-2. 动态404页面：HTML+CSS动画+简单的js交互。（浏览器加载时，会比较耗内存。）
-   - 404动态页面1:纯css3海面上404页面动画特效
+2. 动态404页面：HTML+CSS动画+简单的js交互。（浏览器加载时，会比较耗内存、GPU。）
+   - 404动态页面1: 纯css3海面上404页面动画特效
    - 404动态页面2:（暂未添加）
    
 3. 404小游戏：
@@ -44,18 +48,18 @@
    
      
 
-### 致谢：
-
-1. [i7素材网](http://www.17sucai.com)：404页面来自此网站。
-2. [吾爱破解社区](https://www.52pojie.cn)：我当时想自定义404页面就是受《圈小猫》游戏的影响，我的项目中的此部分内容转载自：吾爱破解社区在github上的开源项目：[phaser-catch-the-cat](https://github.com/ganlvtech/phaser-catch-the-cat)，游戏试玩地址：[https://ganlvtech.github.io/phaser-catch-the-cat/](https://ganlvtech.github.io/phaser-catch-the-cat/)。
-
-
-
 ### 补充内容：
 
 1. 应用js的三种方式。
 2. 使超链接失效的方法。
 3. 实现跳转到上一页的方法。
+
+
+
+### 致谢：
+
+1. [i7素材网](http://www.17sucai.com)：404页面来自此网站。
+2. [吾爱破解社区](https://www.52pojie.cn)：我当时想自定义404页面就是受《圈小猫》游戏的影响，我的项目中的此部分内容转载自：吾爱破解社区在github上的开源项目：[phaser-catch-the-cat](https://github.com/ganlvtech/phaser-catch-the-cat)，游戏试玩地址：[https://ganlvtech.github.io/phaser-catch-the-cat/](https://ganlvtech.github.io/phaser-catch-the-cat/)。
 
 
 
@@ -84,9 +88,8 @@ Tomcat7.0
 
 
 
-
-
 ## License
 
-![GitHub](https://img.shields.io/github/license/yansheng836/404pages.svg)
+<div style="text-align:left"><img src="https://img.shields.io/github/license/yansheng836/404pages.svg"/></div>
 
+This software is licensed under the MIT License. [View the license](https://github.com/yansheng836/404pages/blob/master/LICENSE).
