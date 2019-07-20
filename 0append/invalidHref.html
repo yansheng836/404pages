@@ -8,16 +8,13 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <link rel="stylesheet" type="text/css" href="../css/pre.css">
-
-<style type="text/css">
-</style>
 </head>
 
 <body>
 	<div id="container">
-		<h1>实现a标签href不跳转(禁止跳转),从原理上来讲，可分如下两种方法：</h1>
+		<h1 id="title">实现a标签href不跳转(禁止跳转),从原理上来讲，可分如下两种方法：</h1>
 		<div>
-			<h2>第一种：设置标签属性href</h2>
+			<h2 id="href">第一种：设置标签属性href</h2>
 			<p>使其指向空或不返回任何内容，注：void(0)为：undefined。如：
 			<pre>
 &lt;a href="javascript:void(0);">点此无反应javascript:void(0)&lt;/a>
@@ -27,7 +24,7 @@
 		</div>
 
 		<div>
-			<h2>第二种：设置标签事件onclick</h2>
+			<h2 id="onclick">第二种：设置标签事件onclick</h2>
 			<p>设置为return false，不管href属性的url是什么都会无效，即阻止其默认（跳转）行为。如：
 			<pre>
 &lt;a href="" onclick="return false;">点此无反应return false;&lt;/a>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>goback-test.html</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<style type="text/css">
+*{
+	font-size: 25px;
+}
+
+#title{
+	text-align: center;
+	font-size: 40px;
+}
+</style>
+</head>
+
+<body>
+	<h1 id="title">测试“返回上一页这个功能”</h1>
+	<br>
+	<a href="./goback.html">实现跳转到上一页的三类方法</a>
+	<form action="">
+		username:
+		<input type="text">
+		password:
+		<input type="password">
+		<input type="reset">
+		<input type="submit">
+	</form>
+	<a href="url" onclick="javascript:window.location.reload();return false;">重载页面，本地刷新</a>
+	<a href="url" onclick="location.href = document.referrer; return false;">location.href = document.referrer;</a>
+</body>
+</html>

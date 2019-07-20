@@ -28,6 +28,7 @@ a {
 	text-decoration: none;
 	outline: none;
 	opacity: 1;
+	display: block;
 }
 
 a.link {
@@ -104,9 +105,7 @@ p {
 			<h1 class="fade">温馨提示：您访问的地址不存在！</h1>
 			<p class="fade">你正在寻找的页面无法找到。</p>
 			<p class="fade">
-				<a class="link" href="url" οnclick="javascript:history.go(-1);return false;">返回上一个页面</a>
-				<a class="link" href="url" οnclick="javascript:history.back(-1);return false;">返回上一个页面</a>
-				&nbsp;
+				<a href="url" onclick="javascript:window.history.go(-1);return false;">返回上一个页面</a>
 				<a class="link" href="./index.html">返回首页</a>
 			</p>
 		</div>

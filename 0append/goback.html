@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>goback.html</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!-- <link rel="stylesheet" type="text/css" href="../css/pre.css"> -->
+
+<style type="text/css">
+* {
+	font-size: 22px;
+	font-family: "Arial", "Microsoft YaHei", "宋体", sans-serif;
+}
+
+#container {
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+h1#title {
+	text-align: center;
+	font-size: 40px;
+}
+
+h1,h2 {
+	color: #646464;
+}
+
+article h2 {
+	margin: 35px 0 10px 0;
+	font-size: 30px;
+}
+
+a,input,button {
+	display: block;
+}
+
+.description p {
+	text-indent: 2em;
+}
+
+
+
+code {
+	font-family: Consolas serif;
+	color: #009688;
+}
+
+a {
+	text-decoration: none;
+	color: #03a9f4;
+}
+
+a:HOVER {
+	text-decoration: underline;
+	color: red;
+}
+
+/* 添加了https://github.com/IanLunn/Hover的样式  */
+/* Rectangle In */
+.hvr-rectangle-in {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	background: #2098D1;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.hvr-rectangle-in:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #e1e1e1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.hvr-rectangle-in:hover,.hvr-rectangle-in:focus,.hvr-rectangle-in:active
+	{
+	color: white;
+}
+
+.hvr-rectangle-in:hover:before,.hvr-rectangle-in:focus:before,.hvr-rectangle-in:active:before
+	{
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+.code-example {
+	padding-left: 45px;
+	padding-top: 0px;
+	/* border: solid 1px grey; */
+}
+
+ul {
+	list-style-type: none;
+}
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<h1 id="title">实现“跳转到上一页”的三类方法:</h1>
+		<article>
+			<h2>总述</h2>
+			<div class="description">
+				<p>
+					一、主要实现方法是 1: <code>javascript:window.history.go(-1);</code> 2: <code>javascript:history.back();</code>
+					或<code>javascript:history.back(-1);</code>3: <code>javascript:location.href
+						= document.referrer;</code> 或者<code>javascript:self.location =
+						document.referrer;</code>。因1.2方法类似，演示只演示back(-1)方法，3只演示第一种。
+				</p>
+				<p>二、主要实现形式是通过设置属性和事件监听来实现，如：
+					通过设置a标签的href属性来实现、通过设置a标签、input(button)标签的onclick()方法来实现。</p>
+				<ul>
+					<span>三、注：浏览器对象模型（Browser Object Model (BOM)），可参考： <a
+							style="display: inline;"
+							href="http://www.w3school.com.cn/js/js_window.asp">W3C-JavaScript
+							Window - 浏览器对象模型</a>。</span>
+					<li>(1).window为浏览器内置的顶级对象，可以省略不写。所有全局 JavaScript 对象，函数和变量自动成为 window
+						对象的成员。</li>
+					<li>(2).history对象包含浏览器历史;方法back()为后退，相当于back(-1);方法forward()为前进，相当于forward(1);
+						方法go(n)表示到历史中某个页面。</li>
+					<li>(3).location对象包含的是当前URL的信息，href属性用于：设置或返回完整的 URL，referrer
+						属性可返回载入当前文档的文档的 URL,即上一个页面的URL；也可以这样理解:设置a标签的超链接为上一个页面的URL，由此，点击可实现跳转。</li>
+				</ul>
+			</div>
+		</article>
+
+		<article>
+			<h2>方法1：通过设置a标签的href属性来实现：</h2>
+			<div class="description">
+				<p>
+					注意：<font style="color: red;">一定要写</font> <code>javascript:</code>，因为这是内嵌式js代码(可参考:
+					<a style="display: inline;" href="./invalidHref.html#href">使超链接失效的方法1</a>
+					)。
+				</p>
+			</div>
+			<div class="code-example">
+				<a href="javascript:window.history.back(-1);">href="javascript:window.history.back(-1);"</a>
+				<a href="javascript:location.href = document.referrer;">href="javascript:location.href
+					= document.referrer;"</a>
+			</div>
+		</article>
+
+		<article>
+			<h2>方法2：a标签设置onclick()事件:</h2>
+			<div class="description">
+				<ul>
+					<li>
+						1.onclick()里面js应用方式为：
+						<a style="display: inline;" href="./3use-js-ways.html#first">行间引用</a>
+						。
+						<p>
+							(1).<font style="color: red;">一定要在后面加上</font><code>return false;</code>，该语句是用来禁止链接跳转到href的地址(可参考:
+							<a style="display: inline;" href="./invalidHref.html#onclick">使超链接失效的方法2</a>
+							)， 故href属性的值可以任意。a标签设置<code>onclick()</code>事件,可以省略<code>javascript:</code>，因为这里的事件监听本来就是有js来完成的，
+							不过建议不要省略。
+						</p>
+						<p>
+							(2).如果不想在后面加上<code>return false;</code>，href属性应该设置为<code>javascript:;</code>或为空字符串，使其指向空或不返回任何内容。
+							但是不推荐不写href属性，因为如果不写改属性，该a标签就没有超链接的默认样式，如：有颜色，下划线，手表悬浮显示指针，即使它被点击后仍然能够实现跳转。
+						</p>
+					</li>
+					<li>
+						2.onclick()里面js应用方式为：
+						<a style="display: inline;" href="./3use-js-ways.html#second">嵌入式</a>
+						。
+						<p>
+							嵌入式js要注意<code>return false;</code>的位置，要考虑放在哪里才能禁用href，可参考：
+							<a style="display: inline;"
+								href="https://blog.csdn.net/weixin_41287260/article/details/83473328">我转发的一篇博客</a>
+							。
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="code-example">
+				<a href="url" onclick="javascript:window.history.back(-1);return false;">href="url"
+					onclick="javascript:window.history.back(-1);return false;"</a>
+				<a href="url" onclick="location.href = document.referrer; return false;">href="url"
+					onclick="location.href = document.referrer; return false;"</a>
+				<a href="javascript:;" onclick="history.back(-1);">href="javascript:;"
+					onclick="history.back(-1);" </a>
+				<a href="" onclick="javascript:window.history.back(-1);return false;">
+					href="" onclick="javascript:window.history.back(-1);return false;"</a>
+				<a onclick="history.go(-1);" style="color: black;">onclick="history.go(-1);"
+					不设置href，会不显示a标签默认特征：变色，下划线；但是可以实现跳转。</a>
+
+				<!--如果用JS方法也有需要注意的地方， 参考：https://blog.csdn.net/weixin_41287260/article/details/83473328 -->
+				<a href="url" onclick="reload1();">onclick="reload1();"不能返回上一页，没有屏蔽href</a>
+				<a href="url" onclick="return reload1();">onclick="return
+					reload1();"可以返回上一页</a>
+				<a href="url" onclick="reload1(); return false;">onclick="reload1();
+					return false;"可以返回上一页</a>
+				<script type="text/javascript">
+					function reload1() {
+						window.history.back(-1);
+						console.log("history:" + history);
+						alert("history:" + history);
+						return false;
+					}
+				</script>
+			</div>
+		</article>
+
+		<article>
+			<h2>方法3：input,button标签设置onclick()事件:</h2>
+			<div class="description">
+				<p>
+					可以省略<code>return false;</code>，因为这两个标签是没有超链接的，所以不存在禁用超链接的说法。
+				</p>
+			</div>
+			<div class="code-example">
+				<input class="hvr-rectangle-in" type="button"
+					value="javascript:history.back(-1);" onclick="javascript:history.back(-1);">
+				<button class="hvr-rectangle-in" onclick="javascript:history.back(-1);">javascript:history.back(-1);</button>
+			</div>
+		</article>
+
+		<article>
+			<!-- 三个汇总分析 -->
+			<h2>
+				*比较各方法的差异，主要是看其是否会刷新页面
+				<a style="display: inline;" href="goback-test.html">测试页面地址</a>
+			</h2>
+			<div class="description">
+				<p>测试页面为一个简单的表单，只含有账号和密码。通过查看账号的状态，查看“返回上一页”后是否会刷新页面。</p>
+				<ul>
+					<li>1.go(-1),back(),bakck(-1)不会刷新原页面，比如表单的text域如果之前有数据，不会刷新；但是密码会消失，这应该是密码框的一种保护机制。</li>
+					<li>2.行间引用：刷新问题：先go(-1),再reload():360浏览器可以返回，但是不刷新； google不返回；ie不返回。</li>
+					<li>3.嵌入式：刷新问题：先go(-1),再reload():ie，google，360都能跳转，但是不刷新。</li>
+					<li>
+						4.go()back()相当于回退页面，而<code>location.href = document.referrer;</code>相当于点击超链接实现跳转，也就是说会刷新页面
+						; 按理说如果刷新了本页面，然后点击下面链接是不能跳转到前一页的，但是ie居然可以……
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="code-example">
+				<!-- 1.go(-1),back(),bakck(-1)不会刷新原页面，比如表单的text域如果之前有数据，不会刷新；但是密码会消失，这应该是密码框的一种保护机制。 -->
+				1<a href="url" onclick="javascript:window.history.go(-1);return false;">onclick="javascript:window.history.go(-1);return
+					false;"</a>
+				<a href="url" onclick="javascript:window.history.back();return false;">onclick="javascript:window.history.back();return
+					false;"</a>
+				<a href="url" onclick="javascript:window.history.back(-1);return false;">onclick="javascript:window.history.back(-1);return
+					false;"</a>
+
+				<!-- 2.行间引用：刷新问题：先go(-1),再reload():360浏览器可以返回，但是不刷新； google不返回；ie不返回。-->
+				2<a href="url" onclick="javascript:window.location.reload();return false;">返回上一页面，本应刷新，但是不刷新：onclick="javascript:window.location.reload();return
+					false;"</a>
+				<a href="url"
+					onclick="javascript:window.history.back(-1);window.location.reload();return false;">
+					返回上一页面，重载，本地刷新:onclick="javascript:window.history.back(-1);window.location.reload();return
+					false;"</a>
+
+				<!-- 3.嵌入式：刷新问题：先go(-1),再reload():ie，google，360都能跳转，但是不刷新。 -->
+				3<a href="url" onclick="reload2();return false;">返回上一页面，本应刷新，但是不刷新:onclick="reload2();return
+					false;"</a>
+
+				<script type="text/javascript">
+					function reload2() {
+						window.history.back(-1);
+						window.location.reload();
+						console.log("history:" + history);
+						alert("history:" + history);
+						return false;
+					}
+				</script>
+
+				<!-- 4. -->
+				4<a href="url" onclick="location.href = document.referrer; return false;">相当于点击超链接，跳转，会刷新：onclick="location.href = document.referrer; return false;"</a>
+			</div>
+		</article>
+	</div>
+
+</body>
+</html>
