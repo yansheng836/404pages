@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>应用JS的三种方式</title>
-<!-- <title>useJavaScript.html</title> -->
+<!-- <title>3use-js-ways.html</title> -->
 
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="this is my page">
@@ -13,9 +13,9 @@
 
 <body>
 	<div id="container">
-		<h1>应用JS的三种方式：</h1>
+		<h1 id="title">应用JS的三种方式：</h1>
 		<div>
-			<h2>第一种：行间引用</h2>
+			<h2 id="first">第一种：行间引用</h2>
 			<p>
 				主要是用于一些属性的设置和事件监听，如：
 				<!-- style="background-color: #e2e2e2;" -->
@@ -27,7 +27,7 @@
 		</div>
 
 		<div>
-			<h2>第二种：嵌入式</h2>
+			<h2 id="second">第二种：嵌入式</h2>
 			<p>主要是用于script标签中，位置可以很灵活，具体看需要，如：
 			<pre>
 &lt;script type="text/javascript">
@@ -37,7 +37,7 @@
 		</div>
 
 		<div>
-			<h2>第三种：外链式</h2>
+			<h2 id="thrid">第三种：外链式</h2>
 			<p>主要是用于导入外部js，常见有引入jQuery库；或者统一将javascript脚本放到一个js文件中，使HTML文本更加整洁，如：
 			<pre>
 &lt;script type="text/javascript" src="./js/jquery.min.js">&lt;/script>
