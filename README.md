@@ -21,11 +21,11 @@
 </error-page>
 ```
 
-3. 整理好后，会把每一个404页面独立开来，这样<font color="red">如果有需要，直接复制对应文件夹即可</font>；当然你也可以进行修改，对其进行个性化设置，可参考：[修改建议](https://github.com/yansheng836/404pages/blob/master/docs/change-advice.md)。
+​	3. 我已将每个404页面独立开来，并将他们整理到一个个二级文件夹。这样<font color="red">如果有需要，直接复制对应文件夹即可</font>；当然你也可以进行修改，对其进行个性化设置，可参考：[修改建议](https://github.com/yansheng836/404pages/blob/master/docs/change-advice.md)。
 
- 
 
-## 404页面分类即介绍：
+
+## 404页面分类：
 
 具体效果到 [github pages](https://www.yansheng.xyz/404pages/) 查看，下面是简单介绍。
 
