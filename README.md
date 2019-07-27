@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/yansheng836/404pages.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/yansheng836/404pages.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/yansheng836/404pages.svg) ![GitHub language count](https://img.shields.io/github/languages/count/yansheng836/404pages.svg) ![GitHub top language](https://img.shields.io/github/languages/top/yansheng836/404pages.svg)
+![GitHub](https://img.shields.io/github/license/yansheng836/404pages.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/yansheng836/404pages.svg) ![GitHub release](https://img.shields.io/github/release/yansheng836/404pages.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/yansheng836/404pages.svg) ![GitHub language count](https://img.shields.io/github/languages/count/yansheng836/404pages.svg) ![GitHub top language](https://img.shields.io/github/languages/top/yansheng836/404pages.svg)
 
 
 
