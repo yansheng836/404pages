@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--解决 IE6 背景缓存-->
-<!--[if IE 6]>
-	<script type="text/javascript">
-		document.execCommand("BackgroundImageCache", false, true);
-	</script>
-<![endif]-->
 
-<!--  <title>1_1_404page.html</title> -->
-<title>HTTP Status 404 – Not Found</title>
+<!--  <title>transparent-404page.html</title> -->
+<title>transparent-404page</title>
 
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="this is my page">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <style type="text/css">
-/* html {
-	background: url(/images/background.jpg) !important;
-} */
 a,fieldset,img {
 	border: 0;
 }
@@ -28,6 +19,7 @@ a {
 	text-decoration: none;
 	outline: none;
 	opacity: 1;
+	display: block;
 }
 
 a.link {
@@ -98,15 +90,14 @@ p {
 <body>
 	<div id="wrapper">
 		<a href="">
-			<img class="fade" src="images/1_1_404page.png">
+			<img class="fade" src="./images/transparent-404page.png">
 		</a>
 		<div>
 			<h1 class="fade">温馨提示：您访问的地址不存在！</h1>
 			<p class="fade">你正在寻找的页面无法找到。</p>
 			<p class="fade">
-				<a class="link" href="" οnclick="javascript:history.go(-1);">返回上一个页面</a>
-				&nbsp;
-				<a class="link" href="./index.html">返回首页</a>
+				<a href="url" onclick="javascript:window.history.back(-1);return false;">返回上一个页面</a>
+				<a class="link" href="/404pages/index.html">返回首页</a>
 			</p>
 		</div>
 	</div>

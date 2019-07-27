@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 
 body {
-	background-image: url(/404pages/images/简约.jpg);
+	background-image: url(/404pages/images/background.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed; /*此条属性必须设置否则可能无效*/
 	/* 主要起作用是这个样式：让背景图基于容器大小伸缩 */
