@@ -550,7 +550,7 @@
       , s = function(t) {
         function e(e) {
             var n = this;
-            e.credit || (e.credit = "github.com/ganlvtech"),
+            e.credit || (e.credit = ""),
             e.backgroundColor || (e.backgroundColor = 15658734);
             var o = e.w
               , r = e.h
@@ -590,7 +590,7 @@
     }(Phaser.Game);
     /*!
  * Catch The Cat Game
- *
+ 
  * https://github.com/ganlvtech/phaser-catch-the-cat
  */
     e.default = s

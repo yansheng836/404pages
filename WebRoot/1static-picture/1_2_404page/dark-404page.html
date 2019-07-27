@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>404 - Page not found</title>
-<!--    <title>1_2_404page.html</title>
-<title>404-对不起！您访问的页面不存在</title> -->
+<title>dark-404page</title>
+<!--<title>dark-404page.html</title>-->
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
 
 <style type="text/css">
 .head404 {
 	width: 580px;
 	height: 234px;
 	margin: 50px auto 0 auto;
-	background: url(https://www.daixiaorui.com/Public/images/head404.png)
-		no-repeat;
+	background: url(./images/head404.png) no-repeat;
 }
 
 .txtbg404 {
 	width: 499px;
 	height: 169px;
 	margin: 10px auto 0 auto;
-	background: url(https://www.daixiaorui.com/Public/images/txtbg404.png)
-		no-repeat;
+	background: url(./images/txtbg404.png) no-repeat;
 }
 
 .txtbg404 .txtbox {
@@ -31,7 +27,7 @@
 	top: 30px;
 	left: 60px;
 	color: #eee;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .txtbg404 .txtbox p {
@@ -63,24 +59,14 @@
 			<p class="paddingbox">请点击以下链接继续浏览网页</p>
 			<p>
 				》
-				<a href="url" οnclick="javascript:history.back();return false;">返回上一个页面</a>
-				<!-- 方法3：button标签设置onclick()事件,不能含有：javascript:，不能没有分号，只能用back(),不能用go(-1)；可以省略window和 return false;-->
-				<input type="button" value="Go back!" onclick="history.back();">
+				<a href="url" onclick="javascript:history.back(-1);return false;">返回上一个页面</a>
 				<br>
-				<button onclick="history.back();return false;">返回上一页面history.back();return false;</button>
-				<br>
-				<button onclick="history.back();">返回上一页面history.back();</button>
-				<br>
-				<button onclick="history.back(-1);">返回上一页面history.back(-1);</button>
-				<br>
-
 			</p>
 			<p>
 				》
-				<a href="/">返回网站首页</a>
+				<a href="/404pages/index.html">返回网站首页</a>
 			</p>
 		</div>
 	</div>
 </body>
-
 </html>

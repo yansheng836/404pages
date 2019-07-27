@@ -3,12 +3,12 @@
 body {
 	color: #A1A2AF;
 	font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica,
-		Arial, sans-serif
+		Arial, sans-serif;
 }
 
 .layout {
 	width: 1190px;
-	margin: 150px auto
+	margin: 150px auto;
 }
 
 .err {
@@ -16,14 +16,14 @@ body {
 	width: 568px;
 	height: 306px;
 	margin: 100px auto 40px;
-	background: url("../images/1_3_404page.jpg") no-repeat 21px 18px;
-	font-size: 14px
+	background: url("../images/airplane-404page.jpg") no-repeat 21px 18px;
+	font-size: 14px;
 }
 
 .err_text {
 	position: absolute;
 	top: 246px;
-	left: 239px
+	left: 239px;
 }
 
 .err_back {
@@ -33,5 +33,5 @@ body {
 	width: 154px;
 	height: 38px;
 	text-indent: -999px;
-	overflow: hidden
+	overflow: hidden;
 }

@@ -8,7 +8,7 @@
 
 
 
-### ﻿介绍：
+## ﻿介绍：
 
 ​	1. 该项目收集了几个404的页面模板，可用于替换原生的404页面。我这里只是进行整理，部分来自网络，部分来自其他项目。
 
@@ -21,34 +21,34 @@
 </error-page>
 ```
 
-3. 整理好后（暂未整理好），会把每一个404页面独立开来，这样<font color="red">如果有需要，直接复制对应文件夹即可</font>；当然你也可以进行修改，对其进行个性化设置。
+3. 整理好后，会把每一个404页面独立开来，这样<font color="red">如果有需要，直接复制对应文件夹即可</font>；当然你也可以进行修改，对其进行个性化设置。
 
  
 
-### 404页面分类：
+## 404页面分类：
 
 （注：该分类主要是以页面是否有大量js交互为依据）
 
 1. 静态404页面：HTML+简单CSS+简单的js交互。
-   - 404页面1:透明404
-   - 404页面2:暗黑主题
-   - 404页面3:飞机404
-   - 404页面4:哭脸404
-   - 404页面5:蓝色，纯文字
+   - 透明简约404页面![eMdO76.jpg](https://s2.ax1x.com/2019/07/27/eMdO76.jpg)
+   - 暗黑主题404页面![eMwS9e.jpg](https://s2.ax1x.com/2019/07/27/eMwS9e.jpg)
+   - 飞机404页面![eMw9cd.jpg](https://s2.ax1x.com/2019/07/27/eMw9cd.jpg)
+   - 哭脸404页面![eMwFBt.jpg](https://s2.ax1x.com/2019/07/27/eMwFBt.jpg)
+   - 蓝色简约-纯文字404页面![eMwinI.jpg](https://s2.ax1x.com/2019/07/27/eMwinI.jpg)
 
 2. 动态404页面：HTML+CSS动画+简单的js交互。（浏览器加载时，会比较耗内存、GPU。）
-   - 404动态页面1: 纯css3海面上404页面动画特效
-   - 404动态页面2:（暂未添加）
+   - 纯css3海面404页面动画特效![eMwVN8.gif](https://s2.ax1x.com/2019/07/27/eMwVN8.gif)
+   - 腾讯公益-404页面![eMwkHP.jpg](https://s2.ax1x.com/2019/07/27/eMwkHP.jpg)
    
 3. 404小游戏：
    
-   - 404小游戏1: 吾爱破解社区--404游戏《圈小猫》](https://www.52pojie.cn/12)
-   
+   - 吾爱破解社区-《圈小猫》![eMwEAf.jpg](https://s2.ax1x.com/2019/07/27/eMwEAf.jpg)
    - 404小游戏2：google-酷跑（暂未添加）
    
-     
 
-### 补充内容：
+
+
+## 补充内容：
 
 1. 应用js的三种方式。
 2. 使超链接失效的方法。
@@ -56,23 +56,23 @@
 
 
 
-### 致谢：
+## 致谢：
 
 1. [i7素材网](http://www.17sucai.com)：404页面来自此网站。
+
 2. [吾爱破解社区](https://www.52pojie.cn)：我当时想自定义404页面就是受《圈小猫》游戏的影响，我的项目中的此部分内容转载自：吾爱破解社区在github上的开源项目：[phaser-catch-the-cat](https://github.com/ganlvtech/phaser-catch-the-cat)，游戏试玩地址：[https://ganlvtech.github.io/phaser-catch-the-cat/](https://ganlvtech.github.io/phaser-catch-the-cat/)。
 
-
-
-### 我的环境：
-
-myeclipse10.7
-jdk1.8
-Tomcat7.0
+   该项目使用一个游戏引擎写的，有兴趣可到官网了解：https://phaser.io/。
 
 
 
+## 我的环境：
 
-### 构建：
+myeclipse10.7, jdk1.8, Tomcat7.0
+
+
+
+## 构建(使用)：
 
 1.克隆项目到本地：git clone https://github.com/yansheng836/404pages.git
 
