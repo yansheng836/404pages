@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/yansheng836/404pages.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/yansheng836/404pages.svg) ![GitHub release](https://img.shields.io/github/release/yansheng836/404pages.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/yansheng836/404pages.svg) ![GitHub language count](https://img.shields.io/github/languages/count/yansheng836/404pages.svg) ![GitHub top language](https://img.shields.io/github/languages/top/yansheng836/404pages.svg)
+![GitHub](https://img.shields.io/github/license/yansheng836/404pages.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/yansheng836/404pages.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/yansheng836/404pages.svg) ![GitHub language count](https://img.shields.io/github/languages/count/yansheng836/404pages.svg) ![GitHub top language](https://img.shields.io/github/languages/top/yansheng836/404pages.svg)
 
 
 
@@ -21,7 +21,7 @@
 </error-page>
 ```
 
-3. 整理好后，会把每一个404页面独立开来，这样<font color="red">如果有需要，直接复制对应文件夹即可</font>；当然你也可以进行修改，对其进行个性化设置，可参考：[修改建议](https://github.com/yansheng836/404pages/blog/master/change-advice.md)。
+3. 整理好后，会把每一个404页面独立开来，这样<font color="red">如果有需要，直接复制对应文件夹即可</font>；当然你也可以进行修改，对其进行个性化设置，可参考：[修改建议](https://github.com/yansheng836/404pages/blob/master/docs/change-advice.md)。
 
  
 
