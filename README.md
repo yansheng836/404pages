@@ -8,7 +8,7 @@
 
 1. 该项目收集了几个404的页面模板，可用于替换原生的404页面。我这里只是进行整理，部分来自网络，部分来自其他项目。
 
-2. 自定义一个404页面好像并不难，难的是如何让”状态码为404的请求“都转向我们自定义的404页面，关于这个问题可参考我转发的一篇博客：[三种思路实现自定义404页面](https://blog.csdn.net/weixin_41287260/article/details/96030104)，我这里用的是第三种:利用web容器提供的error-page标签，在`web.xml`中添加<error-page>标签即可实现，如下所示：
+2. 自定义一个404页面好像并不难，难的是如何让”状态码为404的请求“都转向我们自定义的404页面，关于这个问题可参考我转发的一篇博客：[三种思路实现自定义404页面](https://blog.csdn.net/weixin_41287260/article/details/96030104)，我这里用的是第三种：利用web容器提供的error-page标签，在`web.xml`中添加 `<error-page>` 标签即可实现，如下所示：
 
 ```xml
 <error-page>
@@ -59,12 +59,12 @@
 
 ## 我的环境
 
-myeclipse10.7, jdk1.8, Tomcat7.0
+MyEclipse10.7, JDK1.8, Tomcat7.0
 
 ## 构建(使用)
 
 1. 克隆项目到本地：git clone https://github.com/yansheng836/404pages.git
-2. 利用IDE（因为后期考虑添加另外两种访问404的方法）：导入(my)eclipse，调整相关环境，部署到Tomcat，访问`index.html`。
+2. 利用IDE（因为后期考虑添加另外两种访问404的方法）：导入(My)Eclipse，调整相关环境，部署到Tomcat，访问`index.html`。
 3. 不利用IDE（只能查看404页面，不能实现让”状态码为404的请求“都转向我们自定义的404页面）：直接用浏览器打开`index.html`。
 
 ## 总结
@@ -76,3 +76,8 @@ myeclipse10.7, jdk1.8, Tomcat7.0
 <div style="text-align:left"><img src="https://img.shields.io/github/license/yansheng836/404pages.svg"/></div>
 
 This software is licensed under the MIT License. [View the license](https://github.com/yansheng836/404pages/blob/master/LICENSE).
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yansheng836/404pages&type=Timeline)](https://star-history.com/#yansheng836/404pages&Timeline)
+
